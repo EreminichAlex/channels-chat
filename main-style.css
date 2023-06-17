@@ -1,0 +1,192 @@
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+body {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+main {
+    min-height: 100%;
+    width: 100%;    
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #757575;
+}
+
+.main-container {
+    display: grid;
+    grid-template-columns: 1fr 4fr 7fr;
+    height: 100vh;
+}
+
+
+
+/* -------- SIDE BAR --------- */
+.side-bar {
+    background-color: #1E1E1E;
+}
+
+.personal {
+    border-bottom: 5px solid #B3B3B3;
+}
+
+.personal a {
+    display: block;
+    margin: 0 auto;
+    margin: 10px;
+    padding: 30px 10px;
+    text-align: center;
+    color: #fff;
+    background-color: #757575;
+    border-radius: 35px;
+    border: 5px solid #5E5E5E;
+    transition-duration: 0.2s;
+}
+
+.personal a:hover {
+    opacity: 90%;
+}
+
+.channel-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.channel-list a {
+    max-width: 140px;
+    display: block;
+    margin: 0 auto;
+    background-color: #757575;
+    margin: 10px;
+    padding: 45px;
+    font-size: 110%;
+    border-radius: 50%;
+    text-align: center;
+    border: 5px solid #5E5E5E;
+    color: #fff;
+    transition-duration: 0.2;
+}
+
+.channel-list a:hover {
+    opacity: 90%;
+}
+
+.add-channel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 5px solid #B3B3B3;
+}
+
+.add-channel a {
+    max-width: 140px;
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    background-color: #757575;
+    margin: 10px;
+    padding: 10px;
+    color: #14AE5C;
+    font-size: 600%;
+    border-radius: 50%;
+    text-align: center;
+    border: 5px solid #5E5E5E;
+}
+
+
+
+
+/* --------- CHANNEL INFO -------------- */
+
+.channel-info {
+    background-color: #595959;
+    border: 5px solid #474747;
+    border-radius: 0 0 7px 0;
+}
+
+.channel-info-top {
+    border-bottom: 5px solid #8F8F8F;
+    min-height: 300px;
+    background-color: #B3B3B3;
+}
+
+
+
+
+
+
+
+/* ------------ CHANNEL CHAT -------------- */
+.channel-chat {
+    position: relative;
+    width: 100%;
+}
+
+.channel-chat-top {
+    width: 100%;
+    min-height: 120px;
+    border-top: 5px solid #5E5E5E;
+    border-bottom: 5px solid #5E5E5E;
+}
+
+.channel-chat form {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1100px;
+    margin: 0 auto;
+    min-height: 70px;
+    max-height: 130px;
+    margin: 30px 20px;
+    width: 100%;
+}
+
+.channel-chat form input {
+    width: 70%;
+    height: 70px;
+    font-size: 30px;
+    padding: 5px 10px;
+    border-radius: 15px 0 0 15px;
+    border: 5px solid #ECECEC;
+    border-radius: 2px solid #ECECEC;
+}
+
+.channel-chat form input:focus {
+    outline: none;
+    border: 5px solid rgb(204, 204, 204);
+    background-color: #fffffff5;
+}
+
+.channel-chat form button {
+    background-image: url(arrow-right.png);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: 50%;
+    cursor: pointer;
+    width: 150px;
+    height: 70px;
+    fill: red;
+    border-radius: 0 15px 15px 0;
+    border: 5px solid #ECECEC;
+    border-left: 2px solid #ECECEC;
+    background-color: #FFFFFF;
+}
+.channel-chat form button:hover {
+    background-image: url(arrow-right.png);
+    opacity: 0.9;
+}
+
